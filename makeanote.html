@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>make a note</title>
+    <link rel="stylesheet" href="css/mainPage.css">
+    <link rel="stylesheet" href="css/makeanote.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/thabit" type="text/css" />
+
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="userBLock" onclick="profile()">
+            <span id = "userName" ></span>
+        </div>
+
+        <a href="mainPage.html">
+            <div class="home"></div>
+        </a>
+
+        <div class = "out"></div>
+        
+    </header>
+    <button id="addBtn">add</button>
+    <div id="innerBlocks">
+        <div  class="block" onclick = "openNote ()">
+            <p class="listname" >name</p>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        let user = JSON.parse(localStorage.getItem("users_info"));
+        let userNameBlock = document.getElementById("userName");
+        userNameBlock.innerText = user.userName;
+        function profile() {
+            if (localStorage.getItem('users_info') === null) {
+                alert('Вы не авторизованы!')
+                location.href = 'mainPage.html'
+            } else {
+                location.href = 'mainPage.html'
+            }
+        }
+        function sozdatMassiv() {
+            let users_info = []
+            console.log('CREATED')
+            localStorage.setItem("users_info", JSON.stringify(users_info));
+        }
+    </script>
+    <script src="js/makeanote.js"></script>
+</body>
+
+</html>

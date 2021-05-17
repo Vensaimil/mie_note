@@ -1,0 +1,90 @@
+body{
+    width:100%;
+    
+}
+.signform{
+    width:45%;
+    margin: auto;
+    height:100%;
+   
+}
+#loginInput0,#checkpInput0,#nameInput0,#passwordInput0{
+    font-size: 2em;
+    color:rgb(1, 255, 242);
+    background-color: transparent;
+    height:4vh;
+    padding:8px;
+    border:0.5vh solid transparent;
+    font-family: 'ThabitRegular';
+    text-shadow: 3px 2px 4px rgba(17, 252, 252, 0.452);
+    
+}
+#checkpInput0,#passwordInput0{
+    width:45%;
+}
+#nameInput0,#loginInput0{
+    width:96%;
+    margin-bottom: 5vh;
+}
+
+#passwordInput0{
+    margin-right:2vh;
+}
+.signup{
+    font-family: 'ThabitRegular';
+    font-size: 4em;
+    color:#3a3838;
+    text-align: center;
+    width:100%;
+   
+}
+#submitBtn0{
+    text-shadow: 3px 2px 4px #3a3838;
+    text-align: left;
+    font-size: 2em;
+    color:rgb(121, 118, 118);
+    background-color: transparent;
+    width:50%;
+    height:6.5vh;
+   border:1px solid transparent;
+   font-family:'ThabitRegular';
+   margin-top: 5vh;
+}
+#submitBtn0:hover{
+    color: #36F3FF;
+    text-shadow: 3px 2px 4px rgba(17, 252, 252, 0.452);
+}
+
+@media screen and (max-width:575px){
+    #loginInput0,#checkpInput0,#nameInput0,#passwordInput0{
+    font-size: 1em;
+    height: 3vh;
+    padding: 2px;
+    }
+    #nameInput0,#loginInput0{
+        margin-bottom: 2vh;
+    }
+    #submitBtn0 {
+        margin-top: 4vh;
+        font-size: 1em;
+        width: 45%;
+        height: 4.5vh;
+        border: 1px solid transparent;
+        font-family: 'ThabitRegular';
+    }
+    .signup {
+        font-size: 1.7em;
+        
+    }
+    .signform {
+        width: 80%;
+        margin: auto;
+        height: 100%;
+    }
+    #checkpInput0, #passwordInput0 {
+        width: 44%;
+    }
+    #passwordInput0 {
+        margin-right: 1vh;
+    }
+}

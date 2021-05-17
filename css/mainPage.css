@@ -1,0 +1,231 @@
+body{
+    margin:0px;
+    background-color: #171717;
+}
+.mainpageBody{
+    display:flex;
+    position:relative;
+    height:100vh;
+}
+.home{
+    background: linear-gradient(#36F3FF,#FFF38C);
+    position:fixed;
+    top:5vh;
+    left:5vh;
+    width:2.5vw;
+    height:5vh;
+    border-radius: 50px;
+    border:1px solid rgb(101, 250, 255);
+    
+}
+.home:hover{
+    border:1px solid white;
+}
+.out{
+    background: linear-gradient(#36F3FF,#FFF38C);
+    position:fixed;
+    top:5vh;
+    left:5vh;
+    width:2.5vw;
+    height:5vh;
+    border-radius: 50px;
+    border:1px solid rgb(101, 250, 255);
+    
+}
+#userName{
+    background:transparent;
+    position:fixed;
+    top:5vh;
+    left:15vh;
+    width:2.5vw;
+    height:5vh;
+    border-radius: 50px;
+    border:1px solid transparent;
+    color: white;
+}
+.userName:hover{
+    border:1px solid white;
+}
+.userName2{
+    background: linear-gradient(#36F3FF,#7a05ff);
+    position:fixed;
+    top:5vh;
+    left:15vh;
+    width:2.5vw;
+    height:5vh;
+    border-radius: 50px;
+    border:1px solid rgb(101, 250, 255);
+}
+.blockNav{
+    width:45%;
+    font-size: 4.5em;
+    margin-top:30vh;    
+    margin-left:20vh;
+    font-family:'ThabitRegular';
+
+}
+a{
+    text-decoration: none;
+    color:#36F3FF;
+}
+
+a:hover{
+   
+color:#ffe346;
+}
+.grayblock{
+    position:static;
+    background-color: #1C1F1F;
+    width:35%;}
+.login{
+    font-size: 4em;
+    color:#3a3838;
+    text-align: center;
+    font-family:'ThabitRegular';
+}
+
+.loginInfo{
+    width:70%;
+    margin: auto; 
+}
+#nameInput,#passwordInput{
+    font-size: 2em;
+    color:rgb(58, 58, 58);
+    background-color: transparent;
+    width:100%;
+    height:4vh;
+    padding:4px;
+    border:0.5vh solid transparent; 
+    font-family:'ThabitRegular';
+    margin-bottom: 5vh;
+    text-shadow: 2px 2px 4px #3a3838;
+    
+}
+#submitBtn{
+    text-align: left;
+    font-size: 2em;
+    color:rgb(41, 41, 41);
+    background-color: transparent;
+    width:40%;
+    height:6vh;
+   border:1px solid transparent;
+   font-family:'ThabitRegular';
+   margin-top: 5vh;
+   text-shadow: 2px 2px 4px #3a3838;
+   
+}
+#submitBtn:hover{
+    color:#ffed4b;
+    text-shadow: 2px 2px 4px #ffee5a;
+}
+.newuser{
+    font-family:'ThabitRegular';
+    padding-top:20vh;
+    font-size: 2em;
+    color:white;
+    width:65%;
+    margin: auto; 
+}
+.userInfo_img{
+    margin:auto;
+    width:50%;
+    margin-top:10vh;
+    margin-bottom: 5vh;
+}
+.img{
+    background-image: url(/images/img1.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #171717;
+    width:35vh;
+    height:35vh;
+    border:3px solid #1e1e1e;
+    border-radius: 150px;
+}
+.userInfo_string{
+    
+    font-size: 2em;
+    font-family:'ThabitRegular';
+    color: rgb(59 59 59);
+    text-shadow: 2px 2px 4px #0a0909;
+    margin:auto;
+    font-weight:bold;
+    width:80%;
+}
+.yellow{
+    color: #fff06780;
+    text-shadow: 2px 2px 4px #151408b0;
+}
+.parray{
+    margin:10px;
+}
+@media screen and (max-width:575px){
+.menu1 {
+    top: 2vh;
+    left: 2vh;
+    width: 5.5vw;
+    height: 2.5vh;
+}
+#userName {
+    top: 2vh;
+    left: 6vh;
+    width: 5.5vw;
+    height: 2.5vh;
+}
+.mainpageBody {
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+}
+.blockNav {
+    width: 100%;
+    font-size: 1.7em;
+    margin-top: 5vh;
+    margin-left: 10vh;
+        
+}
+.grayblock{
+    width:100%;
+    margin-top:5vh;
+    padding-bottom:5vh;
+    padding-top:3vh;
+}
+.login{
+    font-size:1.5em;
+    margin:0vh;
+    margin-bottom: 2vh;
+}
+.br{
+    display: none;
+}
+#nameInput, #passwordInput {
+    font-size: 1em;
+    width: 100%;
+    height: 2vh;
+    margin-bottom: 2vh;
+    padding: 2px;
+    
+}
+#submitBtn {
+    margin-top: 2vh;
+    font-size: 1em;
+    color: rgb(121, 118, 118);
+    width: 30%;
+    height: 4vh;
+}
+.userInfo_img {
+    width: 30%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+.img {
+    width: 15vh;
+    height: 15vh;
+    border-radius: 150px;
+}
+.userInfo_string {
+    font-size: 1em;
+    width: 70%;
+}
+}
