@@ -1,4 +1,3 @@
-/* localStorage.setItem("notesArray", JSON.stringify([]));  */
 
 let note_status = () =>{
     let note_cb = document.getElementById("note_cb");
@@ -46,7 +45,7 @@ let addBtn = document.getElementById("addBtn");
 let clearBtn = document.getElementById("clearBtn");
 
 let notesArray = [];
-let deletedItemsIdArray = [];
+let deletedtasksIdArray = [];
 let currentId = 1;
 let notes_list = $("#notes_list");
 
@@ -56,7 +55,7 @@ function showItems() {
         notes_list.append(
             `
             <ol class = "note_item">
-            <input onclick = "itemCheck(${notesArray[i].id})" type="checkbox" id ="note_cb">
+            <input onclick = "taskCheck(${notesArray[i].id})" type="checkbox" id ="note_cb">
             <p id = "note_string"> ${notesArray[i].info} ${notesArray[i].cb}</p>
             </ol>
             `
@@ -97,6 +96,7 @@ saveBtn.addEventListener("click", function () {
 
     newList
 });
+
 addBtn.addEventListener("click",function(){
     let string = document.getElementById("note_string");
     let note_string = string.value;
@@ -109,13 +109,14 @@ addBtn.addEventListener("click",function(){
     localStorage.setItem('notesArray', JSON.stringify(notesArray));
     console.log(notesArray); 
 })
+
 clearBtn.addEventListener("click",function(){
-   if(deletedItemsIdArray.length === 0){
+   if(deletedtasksIdArray.length === 0){
        alert("You need to choose some checkbox")
    }else{
-       for(let i = 0; i < deletedItemsIdArray.length; i++){
+       for(let i = 0; i < deletedtasksIdArray.length; i++){
            for(let k = 0; k < notesArray.length; k++){
-               if(deletedItemsIdArray[i] === notesArray[k].id){
+               if(deletedtasksIdArray[i] === notesArray[k].id){
                notesArray.splice(k, 1);
                }
            }

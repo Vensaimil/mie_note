@@ -1,11 +1,4 @@
 
-
-// let user = JSON.parse(localStorage.getItem("users_info"));
-
-// let userNameBlock = document.getElementById("userName");
-// userNameBlock.innerText = user.userName;
-
-
 let notesArray = JSON.parse(localStorage.getItem("notesArray"));
 console.log(notesArray);
 
@@ -67,9 +60,3 @@ function openNote() {
     location.href = "notePage.html";
 }
 
-
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 5973845752c87d9eda4db2a5fae5dd92de6d64af

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html>
-
+ 
 <head>
     <meta charset="UTF-8">
     <title>main page</title>
@@ -22,12 +22,9 @@
         <a href="mainPage.html">
             <div class="home"></div>
         </a>
-        <div class = "out"></div>
-
+     <!--<div class = "out"></div>-->   
     </header>
 
- 
-  
     <div class="mainpageBody">
         <div class="blockNav">
             <a href="mainPage.html">main</a><br>
@@ -49,60 +46,7 @@
     </div>
     <script src="js/mainPage.js"></script>
     <script type="text/javascript">
-<<<<<<< HEAD
-        ////
-        // var header = $('.header'),
-        //     scrollPrev = 0;
 
-        // $(window).scroll(function () {
-        //     var scrolled = $(window).scrollTop();
-
-
-        //     if (scrolled > 100 && scrolled > scrollPrev) {
-        //         header.addClass('out');
-        //     } else {
-        //         header.removeClass('out');
-        //     }
-        //     scrollPrev = scrolled;
-        // });
-        // let userNameHTML = document.getElementById("userName")
-        // if (localStorage.getItem('users_info') === null) {
-        //     userNameHTML.style.display = 'none';
-        // } else {
-        //     let users_info = JSON.parse(localStorage.getItem('users_info'))
-        //     console.log(users_info)
-        //     ExitOrLogButton.innerText = 'Выход'
-        //     userNameHTML.innerText = users_info.userName;
-        // }
-        ////
-        let user = JSON.parse(localStorage.getItem("users_info"));
-        let userNameBlock = document.getElementById("userName");
-        userNameBlock.innerText = user.userName;
-            if (scrolled > 100 && scrolled > scrollPrev) {
-                header.addClass('out');
-            } else {
-                header.removeClass('out');
-            }
-            scrollPrev = scrolled;
-        let userNameHTML = document.getElementById("userName")
-        let CreateTestBtn = document.getElementById('CreateTestBtn')
-       
-        if (localStorage.getItem('users_info') === null) {
-            userNameHTML.style.display = 'none';
-        } else {
-            let users_info = JSON.parse(localStorage.getItem('users_info'))
-            console.log(users_info)
-            ExitOrLogButton.innerText = 'Выход'
-            userNameHTML.innerText = users_info.userName;
-           
-        }
-        let span_profile = document.querySelector("#user_name");
-
-=======
-        let user = JSON.parse(localStorage.getItem("users_info"));
-        let userNameBlock = document.getElementById("userName");
-        userNameBlock.innerText = user.userName;
->>>>>>> 5973845752c87d9eda4db2a5fae5dd92de6d64af
         function profile() {
             if (localStorage.getItem('users_info') === null) {
                 alert('Вы не авторизованы!')
@@ -114,29 +58,11 @@
     
         function sozdatMassiv() {
             let users_info = []
-            console.log('CREATED')
             localStorage.setItem("users_info", JSON.stringify(users_info));
-        }
 
-        // function ExitOrLog() {
-        //     if (localStorage.getItem('users_info') === null) {
-        //         location.href = 'login.html'
-        //     } else {
-        //         localStorage.removeItem('loggedUser')
-        //         ExitOrLogButton.innerText = 'Войти'
-        //         location.reload()
-        //     }
-        // }
-        // function CreateTest() {
-        //     if (localStorage.getItem('loggedUser') === null) {
-        //         alert('Вы не авторизованы!')
-        //         location.href = 'login.html'
-        //     } else {
-        //         location.href = 'createtest.html.html'
-        //     }
-        // }
-      
-      
+            let noteslist_array = []
+            localStorage.setItem(" noteslist_array", JSON.stringify( noteslist_array));
+        }      
     </script>
 </body>
 

@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>main page</title>
+    <title>note page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/mainPage.css">
@@ -15,19 +15,15 @@
 
 <body>
     <header class="header">
-        <div class="userBLock" onclick="profile()">
-            <span id = "userName" ></span>
+        <div class="userBLock">
+            <span id="userName"></span>
         </div>
 
-        <a href="mainPage.html">
+        <a href="mainpage2.html">
             <div class="home"></div>
         </a>
-
-        <div class = "out"></div>
+        <!--<div class = "out"></div>-->
     </header>
-
-    
-    <div class="menu2_acc"></div>
     <input type="text" id="listnameInput" placeholder="name of the task list">
     <button id="saveBtn">save</button>
     <button id="addBtn">add</button>
@@ -42,22 +38,12 @@
 
     </ul>
     <script type="text/javascript">
-        let user = JSON.parse(localStorage.getItem("users_info"));
+        
+        let users_info = JSON.parse(localStorage.getItem("users_info"));
+        console.log(users_info);
+
         let userNameBlock = document.getElementById("userName");
-        userNameBlock.innerText = user.userName;
-        function profile() {
-            if (localStorage.getItem('users_info') === null) {
-                alert('Вы не авторизованы!')
-                location.href = 'mainPage.html'
-            } else {
-                location.href = 'mainPage.html'
-            }
-        }
-        function sozdatMassiv() {
-            let users_info = []
-            console.log('CREATED')
-            localStorage.setItem("users_info", JSON.stringify(users_info));
-        }
+        userNameBlock.innerText = users_info['0'].userName;
     </script>
     <script src="js/notePage.js"></script>
 </body>

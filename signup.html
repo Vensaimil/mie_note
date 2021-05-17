@@ -17,23 +17,14 @@
 <body>
     <header class="header">
         <div class="userBLock" onclick="profile()">
-<<<<<<< Updated upstream
-            <span id="userName"></span>
-        </div>
-        <div class="menu1"></div>
-=======
             <span id = "userName" ></span>
         </div>
-
         <a href="mainPage.html">
             <div class="home"></div>
         </a>
+       <!-- <div class = "out"></div>-->
 
-        <div class = "out"></div>
->>>>>>> Stashed changes
     </header>
-
-
 
     <a href="mainPage.html">
         <div class="menu1"></div>
@@ -48,66 +39,6 @@
     </div>
 
     <script type="text/javascript">
-<<<<<<< HEAD
-        ////
-        // var header = $('.header'),
-        //     scrollPrev = 0;
-
-        // $(window).scroll(function () {
-        //     var scrolled = $(window).scrollTop();
-
-<<<<<<< Updated upstream
-        //     if (scrolled > 100 && scrolled > scrollPrev) {
-        //         header.addClass('out');
-        //     } else {
-        //         header.removeClass('out');
-        //     }
-        //     scrollPrev = scrolled;
-        // });
-        // let userNameHTML = document.getElementById("userName")
-        // if (localStorage.getItem('users_info') === null) {
-        //     userNameHTML.style.display = 'none';
-        // } else {
-        //     let users_info = JSON.parse(localStorage.getItem('users_info'))
-        //     console.log(users_info)
-        //     ExitOrLogButton.innerText = 'Выход'
-        //     userNameHTML.innerText = users_info.userName;
-        // }
-        ////
-=======
->>>>>>> 5973845752c87d9eda4db2a5fae5dd92de6d64af
-        let user = JSON.parse(localStorage.getItem("users_info"));
-        let userNameBlock = document.getElementById("userName");
-        userNameBlock.innerText = user.userName;
-        function profile() {
-=======
-            if (scrolled > 100 && scrolled > scrollPrev) {
-                header.addClass('out');
-            } else {
-                header.removeClass('out');
-            }
-            scrollPrev = scrolled;
-        });
-        let userNameHTML = document.getElementById("userName")
-        if (localStorage.getItem('users_info') === null) {
-            userNameHTML.style.display = 'none';
-        
-        } else {
-            let users_info = JSON.parse(localStorage.getItem('users_info'))
-            console.log(users_info)
-            ExitOrLogButton.innerText = 'Выход'
-            userNameHTML.innerText = users_info.userName;
-           
-        }
-        function logform() {
->>>>>>> Stashed changes
-            if (localStorage.getItem('users_info') === null) {
-                alert('Вы не авторизованы!')
-                location.href = 'mainPage.html'
-            } else {
-                location.href = 'mainPage.html'
-            }
-        }
         function sozdatMassiv() {
             let users_info = []
             console.log('CREATED')
