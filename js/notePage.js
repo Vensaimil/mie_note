@@ -125,4 +125,8 @@ clearBtn.addEventListener("click",function(){
    }
     
 })
+let users_info = JSON.parse(localStorage.getItem("users_info"));
+console.log(users_info);
 
+let noteslist_array = JSON.parse(localStorage.getItem("noteslist_array"));
+console.log(noteslist_array);
