@@ -3,7 +3,7 @@ let loginInput0 = document.getElementById("loginInput0");
 let passwordInput0 = document.getElementById("passwordInput0");
 let checkpInput0 = document.getElementById("checkpInput0");
 let users_info = JSON.parse(localStorage.getItem("users_info"));
-//localStorage.setItem("users_info", JSON.stringify([]));
+
 let regForm = () => {
     if (nameInput0.value.length < 4 && loginInput0.value.length < 4
         && passwordInput0.value.length < 4 && checkpInput0.value.length < 4) {

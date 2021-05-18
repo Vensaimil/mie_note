@@ -1,7 +1,4 @@
 
-let notesArray = JSON.parse(localStorage.getItem("notesArray"));
-console.log(notesArray);
-
 /* 
 let addBtn = document.getElementById("addBtn");
 addBtn.addEventListener("click", function () {
@@ -44,14 +41,22 @@ addBtn.addEventListener("click", function () {
 })
  */
 
+
+let noteslist_array = JSON.parse(localStorage.getItem("noteslist_array"));
+console.log(noteslist_array);
+
+
+
 let addBtn = document.getElementById("addBtn");
 addBtn.addEventListener("click", function () {
+    let listname = $(".listname");
     
     let innerBlocks = $("#innerBlocks")
     for(let i = 0; i < 1;i++){
+        listname.innerText = noteslist_array[i]['name'];
         innerBlocks.append(`
         <div class = "block" onclick = "openNote ()"> 
-        <p class = "listname"> NAME</p>
+        <p class = "listname"> ${noteslist_array[i]['name']}</p>
         </div>
         `)   
     }console.log("hi");
