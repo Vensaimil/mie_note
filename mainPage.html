@@ -16,7 +16,7 @@
 
 <body>
     <header class="header">
-        <div class="userBLock" onclick="profile()">
+        <div class="userBLock" >
             <span id = "userName" ></span>
         </div>
         <a href="mainPage.html">
@@ -28,7 +28,7 @@
     <div class="mainpageBody">
         <div class="blockNav">
             <a href="mainPage.html">main</a><br>
-            <a href="makeanote.html">make a note</a><br>
+            <a href="#" onclick="stop()">make a note</a><br>
             <a href="signup.html"><span id="sign" onclick="sozdatMassiv()">sign up</span></a><br>
 
         </div>
@@ -62,7 +62,13 @@
 
             let noteslist_array = []
             localStorage.setItem("noteslist_array", JSON.stringify( noteslist_array));
-        }      
+        }  
+        function stop(){
+            
+                alert("you must to sign up")
+                location.href = 'signup.html'
+            
+        }    
     </script>
 </body>
 

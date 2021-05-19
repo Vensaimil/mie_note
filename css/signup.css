@@ -54,7 +54,22 @@ body{
     color: #36F3FF;
     text-shadow: 3px 2px 4px rgba(17, 252, 252, 0.452);
 }
-
+#selectedImg{
+    text-shadow: 3px 2px 4px #3a3838;
+    text-align: left;
+    font-size: 2em;
+    color:rgb(121, 118, 118);
+    background-color: transparent;
+    width:70%;
+    height:6.5vh;
+   border:1px solid transparent;
+   font-family:'ThabitRegular';
+   margin-top: 5vh;
+}
+#selectedImg:hover{
+    color: #ffe656;
+    text-shadow: 3px 2px 7px #d6b600(248, 252, 17, 0.452);
+}
 @media screen and (max-width:575px){
     #loginInput0,#checkpInput0,#nameInput0,#passwordInput0{
     font-size: 1em;
