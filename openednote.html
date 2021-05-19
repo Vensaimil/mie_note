@@ -1,42 +1,31 @@
 <!DOCTYPE html>
 
-<html>
-
 <head>
     <meta charset="UTF-8">
-    <title>make a note</title>
-    <link rel="stylesheet" href="css/mainPage.css">
-    <link rel="stylesheet" href="css/makeanote.css">
+    <title>opened page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/mainPage.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/thabit" type="text/css" />
-
-
 </head>
 
 <body>
     <header class="header">
-        <div class="userBLock" onclick="profile()">
-            <span id = "userName" ></span>
+        <div class="userBLock">
+            <span id="userName"></span>
         </div>
+
         <a href="mainpage2.html">
             <div class="home"></div>
         </a>
-      <!--<div class = "out"></div>
-        -->  
+       
     </header>
-    <button id="addBtn">add</button>
-    <div id="innerBlocks">
-        <div  class="block" onclick = "createNote ()">
-            <p class="listname" ></p>
-        </div>
-    </div>
 
-    <script src="js/makeanote.js"></script>
+    <div id = "opened_notes"></div>
+    
+    <script src = "js/openednote.js"></script>
 </body>
-
 </html>

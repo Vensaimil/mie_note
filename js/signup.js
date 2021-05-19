@@ -4,6 +4,7 @@ let passwordInput0 = document.getElementById("passwordInput0");
 let checkpInput0 = document.getElementById("checkpInput0");
 let users_info = JSON.parse(localStorage.getItem("users_info"));
 
+
 let regForm = () => {
     if (nameInput0.value.length < 4 && loginInput0.value.length < 4
         && passwordInput0.value.length < 4 && checkpInput0.value.length < 4) {
@@ -25,6 +26,8 @@ let regForm = () => {
             userName: nameInput0.value,
             userLogin: loginInput0.value,
             userPassword: passwordInput0.value,
+            imgsrc:""
+          
         }
         users_info.push(user)
         localStorage.setItem('users_info', JSON.stringify(users_info));

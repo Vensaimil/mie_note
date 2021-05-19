@@ -8,12 +8,15 @@ body{
     height:100vh;
 }
 .home{
-    background: linear-gradient(#36F3FF,#FFF38C);
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTYLu3SJIR3Zxxxu82WDkJgnMhj8gwddh088Ls1-qs5Tv9NmvsqmWbwXQQFwIKOk9YzhY&usqp=CAU");
     position:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     top:5vh;
     left:5vh;
-    width:2.5vw;
-    height:5vh;
+    width:3.5vw;
+    height:7vh;
     border-radius: 50px;
     border:1px solid rgb(101, 250, 255);
     

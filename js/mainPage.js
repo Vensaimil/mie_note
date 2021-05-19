@@ -9,14 +9,23 @@ console.log(users_info);
 
 
 let logform = () => {
-    for (i = 0; i < 1; i++) {
+    for (i = 0; i < users_info.length; i++) {
         
         if (nameInput.value.length != 0 && passwordInput.value.length != 0 &&
             nameInput.value === users_info[i].userName &&
             passwordInput.value === users_info[i].userPassword) {
           /*   regform.style.display = "none"; */
+         
+            let currentUser = {
+                name:users_info[i].userName,
+                login:users_info[i].userLogin,
+               
+            }
+
+            localStorage.setItem("currentUser", JSON.stringify(currentUser));
 
           location.href = 'mainpage2.html'
+          
         }else if (
             nameInput.value != users_info[i].userName ||
             passwordInput.value != users_info[i].userPassword){
@@ -27,6 +36,7 @@ let logform = () => {
              alert("you're not register yet")
             location.href = 'signup.html'
         }
+
     }
 }
 

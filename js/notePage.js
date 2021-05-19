@@ -21,9 +21,11 @@ class task {
 }
 
 class list {
+    id;
     name;
     notesArray;
-    constructor(newName, newNotesArray) {
+    constructor(newId,newName, newNotesArray) {
+        this.id = newId;
         this.name = newName;
         this.notesArray = newNotesArray;
     }
@@ -80,11 +82,12 @@ function deleteItem(taskId) {
 
 
 saveBtn.addEventListener("click", function () {
-   
     let note_listName = document.getElementById("listnameInput").value;
-    let newList = new list(note_listName,notesArray);
 
     let noteslist_array = JSON.parse(localStorage.getItem("noteslist_array"));
+    let newId = noteslist_array.length + 1;
+    let newList = new list(newId, note_listName,notesArray);
+    
     noteslist_array.push(newList)
 
     localStorage.setItem('noteslist_array', JSON.stringify(noteslist_array));
