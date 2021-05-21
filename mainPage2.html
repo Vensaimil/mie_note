@@ -17,14 +17,14 @@
 <body>
     <header class="header">
         <div class="userBLock" onclick="profile()">
-            <span id = "userName" ></span>
+            <span id="userName"></span>
         </div>
 
         <a href="mainPage.html">
             <div class="home"></div>
         </a>
 
-       <!--<div class = "out"></div>--> 
+        <!--<div class = "out"></div>-->
     </header>
 
     <div class="mainpageBody">
@@ -35,18 +35,23 @@
 
         </div>
         <div class="grayblock">
-        
+
         </div>
     </div>
     <script type="text/javascript">
-
         function signOut() {
-         location.href = 'mainPage.html'
-    }
+            if (localStorage.getItem('currentUser') === null) {
+                location.href = 'mainpage.html'
+
+            } else {
+                localStorage.removeItem('currentUser')
+                location.reload()
+            }
+        }
 
     </script>
     <script src="js/mainpage2.js"></script>
-    
+
 </body>
 
 </html>

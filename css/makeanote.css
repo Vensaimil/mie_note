@@ -1,7 +1,7 @@
 #addBtn{
     position:fixed;
     top:15vh;
-    left:5vh;
+    left:6vh;
     background:linear-gradient(#36F3FF,#5135a0);
     width: 2.5vw;
     height: 20vh;
@@ -58,22 +58,22 @@
 }
 .listname{
     text-align: center ;
-    font-size: 2em;
+    font-size: 1.7em; 
     color: rgb(31, 31, 31);
     opacity:50%;
     background-color: transparent;
-    width: 40%;
+    width: 80%;
     margin:auto;
     font-family: 'ThabitRegular';
     padding-top:14.5vh;
 }
 
 @media screen and (max-width:575px){
-.innerBlocks{
+#innerBlocks{
 display: flex;
 max-width: 100%;
-margin-left: 2vh;
-margin-top: 5.5vh;
+margin-left: 6vh;
+margin-top: 0.5vh;
 }
 .square {
     height: 30vh;
@@ -82,11 +82,20 @@ margin-top: 5.5vh;
     transition: 2s ease;
 }
 #addBtn {
-    top: 10vh;
-    left: 2vh;
-    width: 6vw;
+    top: 12vh;
+    left: 4vh;
+    width: 4vw;
     height: 15vh;
     word-wrap: break-word;
     font-size: 1em;
+}
+.block {
+    height: 31vh;
+    width: 40vh;
+    margin: 0.5vh;
+    transition: 2s ease;
+    background-color: rgb(121, 251, 208);
+    list-style-type: none;
+    opacity: 50%;
 }
 }

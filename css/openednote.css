@@ -1,0 +1,43 @@
+#listname{
+    position:absolute;
+    top:5vh;
+    left:20vh;
+    font-size: 2em;
+    color: rgb(1, 255, 242);
+    background-color: transparent;
+    width: 40%;
+    border:none;
+    font-family: 'ThabitRegular';
+    font-weight: bold;
+    outline: 0;
+    outline-offset: 0;
+    margin:0px;
+}
+#opened_notes{
+    max-width: 85%;
+    padding: 0vh;
+    margin-left: 20vh;
+    margin-top: 20vh;
+}
+.note_item{
+
+    list-style-type: none; 
+	counter-reset: num;
+    width:auto;
+    display: flex;
+    height:auto;
+    margin:0px;
+    padding:0px;
+}
+#note_string{
+    font-size: 2em;
+    color: rgb(1, 255, 242);
+    background-color: transparent;
+    width:100%;
+    padding: 5px;
+    border:none;
+    font-family: 'ThabitRegular';
+    outline: 0;
+    outline-offset: 0;
+    margin:0px;
+}

@@ -6,14 +6,19 @@ console.log(clickedListId);
 
 for(let i =0; i < noteslist_array.length; i++){
     if(noteslist_array[i].id === clickedListId){
+        let listname = $("#listname");
         let opened_notes = $("#opened_notes");
-        opened_notes.append(`
-        <p class="listname" >${noteslist_array[i].name}</p>
+        listname.append(`
+        ${noteslist_array[i].name}
         `)
         for(let k = 0; k <noteslist_array[i].notesArray.length; k++ ){
-            opened_notes.append(`
-        <p class="listname" >${noteslist_array[i].notesArray[k].info}</p>
+        opened_notes.append(`
+        <ol class = "note_item">
+        <p id = "note_string"> ${noteslist_array[i].notesArray[k].info} </p>
+        </ol>
+      
         `)
         }
     }
 }
+

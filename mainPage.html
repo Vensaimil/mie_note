@@ -28,7 +28,7 @@
     <div class="mainpageBody">
         <div class="blockNav">
             <a href="mainPage.html" onclick="sozdatMassiv()">main</a><br>
-            <a href="#" onclick="stop()">make a note</a><br>
+            <a href="makeanote.html" onclick="stop()">make a note</a><br>
             <a href="signup.html"><span id="sign" >sign up</span></a><br>
 
         </div>
@@ -63,20 +63,7 @@
             let noteslist_array = []
             localStorage.setItem("noteslist_array", JSON.stringify( noteslist_array));
         }  
-        function stop(){
-           
-            if (localStorage.getItem('user') === null) {
-                location.href = 'mainpage.html'
-
-            } else {
-                 location.href = 'mainpage.html'
-                
-            }
         
-           //     alert("you must to sign up or")
-               
-            
-        }    
     </script>
 </body>
 

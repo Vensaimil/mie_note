@@ -7,6 +7,8 @@ let passwordInput = document.getElementById("passwordInput");
 let users_info = JSON.parse(localStorage.getItem("users_info"));
 console.log(users_info);
 
+let isLoged = false;
+localStorage.setItem('isLoged', isLoged)
 
 let logform = () => {
     for (i = 0; i < users_info.length; i++) {

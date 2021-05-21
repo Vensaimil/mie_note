@@ -231,4 +231,15 @@ color:#ffe346;
     font-size: 1em;
     width: 70%;
 }
+
+.home{
+    background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTYLu3SJIR3Zxxxu82WDkJgnMhj8gwddh088Ls1-qs5Tv9NmvsqmWbwXQQFwIKOk9YzhY&usqp=CAU"),
+    no-repeat,cover,center;
+    
+    top:3vh;
+    left:3vh;
+    width:3.5vw;
+    height:7vh;
+    
+}
 }
