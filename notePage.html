@@ -15,10 +15,6 @@
 
 <body>
     <header class="header">
-        <div class="userBLock">
-            <span id="userName"></span>
-        </div>
-
         <a href="mainpage2.html">
             <div class="home"></div>
         </a>
@@ -37,14 +33,7 @@
     <ul id="notes_list">
 
     </ul>
-    <script type="text/javascript">
-        
-        let users_info = JSON.parse(localStorage.getItem("users_info"));
-        console.log(users_info);
-
-        let userNameBlock = document.getElementById("userName");
-        userNameBlock.innerText = users_info['0'].userName;
-    </script>
+   
     <script src="js/notePage.js"></script>
 </body>
 

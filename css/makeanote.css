@@ -14,10 +14,7 @@
     display:table;
     padding: 0.5%;
 }
-#addBtn:hover{
-    border:1px solid white;
 
-}
 #innerBlocks{
     display:flex;
     align-items: center;
@@ -82,12 +79,12 @@ margin-top: 0.5vh;
     transition: 2s ease;
 }
 #addBtn {
-    top: 12vh;
-    left: 4vh;
-    width: 4vw;
-    height: 15vh;
+    top: 10vh;
+    left: 3vh;
+    width: 7vw;
+    height: 14vh;
     word-wrap: break-word;
-    font-size: 1em;
+    font-size: 1.3em;
 }
 .block {
     height: 31vh;

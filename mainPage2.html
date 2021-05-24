@@ -16,6 +16,7 @@
 
 <body>
     <header class="header">
+
         <div class="userBLock">
             <span id="userName"></span>
         </div>
@@ -40,13 +41,11 @@
     </div>
     <script type="text/javascript">
         function signOut() {
-           //не удаляет из локала 
-                localStorage.removeItem('user')
-
-               // location.href = 'mainPage.html'
-            } 
-        
-
+           
+            let currentUser = JSON.parse(localStorage.getItem("currentUser"))
+            localStorage.removeItem('currentUser')
+            location.href = 'mainPage.html'
+        }
     </script>
     <script src="js/mainpage2.js"></script>
 

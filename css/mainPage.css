@@ -7,6 +7,14 @@ body{
     position:relative;
     height:100vh;
 }
+#userName{
+    color: rgb(255, 255, 255);
+    font-size: 2.5em;
+    font-family: 'ThabitRegular';
+    position:absolute;
+    top:5vh;
+    left:12vw;
+}
 .home{
     background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTYLu3SJIR3Zxxxu82WDkJgnMhj8gwddh088Ls1-qs5Tv9NmvsqmWbwXQQFwIKOk9YzhY&usqp=CAU");
     position:fixed;
@@ -35,20 +43,7 @@ body{
     border:1px solid rgb(101, 250, 255);
     
 }
-#userName{
-    background:transparent;
-    position:fixed;
-    top:5vh;
-    left:15vh;
-    width:2.5vw;
-    height:5vh;
-    border-radius: 50px;
-    border:1px solid transparent;
-    color: white;
-}
-.userName:hover{
-    border:1px solid white;
-}
+
 .userName2{
     background: linear-gradient(#36F3FF,#7a05ff);
     position:fixed;
@@ -61,7 +56,7 @@ body{
 }
 .blockNav{
     width:45%;
-    font-size: 4.5em;
+    font-size: 5em;
     margin-top:30vh;    
     margin-left:20vh;
     font-family:'ThabitRegular';
@@ -92,7 +87,7 @@ color:#ffe346;
     margin: auto; 
 }
 #nameInput,#passwordInput{
-    font-size: 2em;
+    font-size: 2.5em;
     color:rgb(58, 58, 58);
     background-color: transparent;
     width:100%;
@@ -148,7 +143,7 @@ color:#ffe346;
 }
 .userInfo_string{
     
-    font-size: 2em;
+    font-size: 2.5em;
     font-family:'ThabitRegular';
     color: rgb(59 59 59);
     text-shadow: 2px 2px 4px #0a0909;
@@ -183,14 +178,14 @@ color:#ffe346;
 }
 .blockNav {
     width: 100%;
-    font-size: 1.7em;
-    margin-top: 5vh;
-    margin-left: 10vh;
+    font-size: 2em;
+    margin-top: 7vh;
+    margin-left: 18vw;
         
 }
 .grayblock{
     width:100%;
-    margin-top:5vh;
+    margin-top:10vh;
     padding-bottom:5vh;
     padding-top:3vh;
 }
@@ -223,23 +218,22 @@ color:#ffe346;
     margin-bottom: 2vh;
 }
 .img {
-    width: 15vh;
-    height: 15vh;
+    width: 30vw;
+    height: 22vh;
     border-radius: 150px;
 }
 .userInfo_string {
-    font-size: 1em;
+    font-size: 1.5em;
     width: 70%;
 }
 
 .home{
     background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTYLu3SJIR3Zxxxu82WDkJgnMhj8gwddh088Ls1-qs5Tv9NmvsqmWbwXQQFwIKOk9YzhY&usqp=CAU"),
     no-repeat,cover,center;
-    
-    top:3vh;
-    left:3vh;
-    width:3.5vw;
-    height:7vh;
+    top: 2vh;
+    left: 2vh;
+    width: 10.5vw;
+    height:5vh;
     
 }
 }

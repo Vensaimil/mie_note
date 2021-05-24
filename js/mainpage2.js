@@ -1,6 +1,9 @@
 
 let currentUser = JSON.parse(localStorage.getItem("currentUser"));
+console.log(currentUser);
 
+let userNameBlock = document.getElementById("userName");
+userNameBlock.innerText = currentUser.name;
 
 let grayblock = $(".grayblock");
 

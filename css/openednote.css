@@ -41,8 +41,30 @@
     margin:0px;
 }
 #note_cb{
-    margin:2vh;
+    margin:1.5vh;
     width: 2vw;
     height: 3vh;
 
 }
+@media screen and (max-width:575px){
+    #note_cb {
+        width: 5vw;
+        height: 4vh;
+        margin: 1.5vh;
+    
+    }
+    #listname{
+    top: 2vh;
+    left: 15vh;
+    font-size: 1.5em;
+    color: rgb(1, 255, 242);
+    max-width: 55%;
+    text-align: center; 
+    }
+    #opened_notes {
+        max-width: 85%;
+        padding: 0vh;
+        margin-left: 18vw;
+        margin-top: 12vh;
+    }
+    }
