@@ -21,7 +21,7 @@ let logform = () => {
             let currentUser = {
                 name:users_info[i].userName,
                 login:users_info[i].userLogin,
-               
+                imgsrc:users_info[i].imgsrc,
             }
 
             localStorage.setItem("currentUser", JSON.stringify(currentUser));

@@ -1,4 +1,4 @@
-/* let galleryPicAll = document.getElementById("galleryAll");
+let galleryPicAll = document.getElementById("galleryAll");
 let galleryPic1 = document.getElementById("gallery1pic");
 let galleryPic2 = document.getElementById("gallery2pic");
 let galleryPic3 = document.getElementById("gallery3pic");
@@ -7,30 +7,45 @@ let galleryPic5 = document.getElementById("gallery5pic");
 let galleryPic6 = document.getElementById("gallery6pic");
 let galleryPic7 = document.getElementById("gallery7pic");
 let galleryPic8 = document.getElementById("gallery8pic");
+let backButton = document.getElementById("backBtn");
 
-galleryPic1 = addEventListener("click", function(){
-    document.body.style.backgroundImage = 'url(https://ic.pics.livejournal.com/phys_exp/20166967/50476/50476_original.jpg)';
-});
-galleryPic2 = addEventListener("click", function(){
-    document.body.style.backgroundImage = 'url(https://images44.fotki.com/v1655/photos/3/88613/14462246/TheGardenakaIrises-vi.jpg)';
-});
-galleryPic3 = addEventListener("click", function(){
-    document.body.style.backgroundImage = 'url(https://3dnews.ru/assets/external/illustrations/2014/07/05/823437/mone_big.jpg)';
-});
-galleryPic4 = addEventListener("click", function(){
-    document.body.style.backgroundImage = 'url(https://us.v-cdn.net/6025126/uploads/editor/r9/grh0cefyxqyz.jpg)';
-});
-galleryPic5 = addEventListener("click", function(){
-    document.body.style.backgroundImage = 'url(https://avatars.mds.yandex.net/get-zen_doc/1945572/pub_5d4ad10fa1b4f100ae7d37b5_5d4ad2443f548700ad47c24d/scale_1200)';
-});
-galleryPic6 = addEventListener("click", function(){
-    document.body.style.backgroundImage = 'url(http://cs624124.vk.me/v624124255/274a/a7r5HdYwOeU.jpg)';
-});
-galleryPic7 = addEventListener("click", function(){
-    document.body.style.backgroundImage = 'url(https://dynamo.kiev.ua/media/swfupload/2020/09/krik-munka.jpeg)';
-});
-galleryPic8 = addEventListener("click", function(){
-    document.body.style.backgroundImage = 'url(https://art-holst.com.ua/wp-content/uploads/kartiny-impressionizm-6.jpg)';
+backButton.addEventListener("click", function(){
+    location.href = 'mainPage2.html'
 });
 
- */
+let currentUser = JSON.parse(localStorage.getItem("currentUser"));
+console.log(currentUser)
+galleryPic1.addEventListener("click", function(){
+    currentUser.imgsrc = "https://ic.pics.livejournal.com/phys_exp/20166967/50476/50476_original.jpg";
+    localStorage.setItem("currentUser", JSON.stringify(currentUser));
+    console.log(currentUser)
+});
+galleryPic2.addEventListener("click", function(){
+    currentUser.imgsrc = "https://en.wahooart.com/Art.nsf/O/9GEHSH/$File/Claude-Monet-le-bassin-aux-nympheas-reflets-verts.jpg";
+    localStorage.setItem("currentUser", JSON.stringify(currentUser));
+});
+galleryPic3.addEventListener("click", function(){
+    currentUser.imgsrc = "https://3dnews.ru/assets/external/illustrations/2014/07/05/823437/mone_big.jpg";
+   localStorage.setItem("currentUser", JSON.stringify(currentUser));
+});
+galleryPic4.addEventListener("click", function(){
+    currentUser.imgsrc = "https://cs6.pikabu.ru/post_img/big/2014/04/07/11/1396897063_1421524292.jpg"
+    localStorage.setItem("currentUser", JSON.stringify(currentUser));
+});
+galleryPic5.addEventListener("click", function(){
+    currentUser.imgsrc = "https://i.pinimg.com/originals/5c/2c/5c/5c2c5c63ff154624629fee68781c2735.jpg";
+    localStorage.setItem("currentUser", JSON.stringify(currentUser));
+});
+galleryPic6.addEventListener("click", function(){
+    currentUser.imgsrc = "https://us.v-cdn.net/6025126/uploads/editor/r9/grh0cefyxqyz.jpg";
+    localStorage.setItem("currentUser", JSON.stringify(currentUser));
+});
+galleryPic7.addEventListener("click", function(){
+    currentUser.imgsrc = "https://3.bp.blogspot.com/-WljvtyfD7pc/UZzCv-eJioI/AAAAAAAAfC0/X3FgQmYZ-rk/s1600/%D0%9A%D0%BB%D0%BE%D0%B4+%D0%9C%D0%BE%D0%BD%D0%B5+-+Cliff+at+Dieppe,+1882.jpg";
+    localStorage.setItem("currentUser", JSON.stringify(currentUser));
+});
+galleryPic8.addEventListener("click", function(){
+    currentUser.imgsrc = "https://cdn2.oceansbridge.com/2017/07/25095738/At-Les-Petit-Dalles-1884-Claude-Monet-Oil-Painting.jpg";
+    localStorage.setItem("currentUser", JSON.stringify(currentUser));
+});
+

@@ -9,7 +9,9 @@ let grayblock = $(".grayblock");
 
     grayblock.append(`
         <div class = "userInfo_img">
-        <div class = "img"></img></div>
+        <div class = "img" style="background-image: url(${currentUser.imgsrc})">
+            
+        </div>
         </div>
         <div class = "userInfo_string"> 
         <p class = "parray"><span class = "yellow">Name:</span>${currentUser.name}</p>
@@ -18,4 +20,4 @@ let grayblock = $(".grayblock");
         </div>
     `)
 
-
+document.body.style.backgroundImage = `url(${currentUser.imgsrc})`;
