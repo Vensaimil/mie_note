@@ -16,7 +16,7 @@
 
 <body>
     <header class="header">
-        <div class="userBLock" onclick="profile()">
+        <div class="userBLock">
             <span id="userName"></span>
         </div>
 
@@ -40,14 +40,12 @@
     </div>
     <script type="text/javascript">
         function signOut() {
-            if (localStorage.getItem('currentUser') === null) {
-                location.href = 'mainpage.html'
+           //не удаляет из локала 
+                localStorage.removeItem('user')
 
-            } else {
-                localStorage.removeItem('currentUser')
-                location.reload()
-            }
-        }
+               // location.href = 'mainPage.html'
+            } 
+        
 
     </script>
     <script src="js/mainpage2.js"></script>

@@ -20,7 +20,6 @@
     margin-top: 20vh;
 }
 .note_item{
-
     list-style-type: none; 
 	counter-reset: num;
     width:auto;
@@ -40,4 +39,9 @@
     outline: 0;
     outline-offset: 0;
     margin:0px;
+}
+#note_cb{
+    margin:2vh;
+  width: 2.5vw;
+    height:3.5vh;
 }

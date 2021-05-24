@@ -1,6 +1,7 @@
 
 let currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
+
 let grayblock = $(".grayblock");
 
     grayblock.append(`

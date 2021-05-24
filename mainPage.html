@@ -28,7 +28,7 @@
     <div class="mainpageBody">
         <div class="blockNav">
             <a href="mainPage.html" onclick="sozdatMassiv()">main</a><br>
-            <a href="makeanote.html" onclick="stop()">make a note</a><br>
+            <a href="#" onclick="stop()">make a note</a><br>
             <a href="signup.html"><span id="sign" >sign up</span></a><br>
 
         </div>
@@ -47,13 +47,11 @@
     <script src="js/mainPage.js"></script>
     <script type="text/javascript">
 
-        function profile() {
-            if (localStorage.getItem('users_info') === null) {
+      function stop() {
+            if (localStorage.getItem('user') === null) {
                 alert('Вы не авторизованы!')
                 location.href = 'mainPage.html'
-            } else {
-               span_profile.classList.add("user_name");
-            }
+            } 
         }
     
         function sozdatMassiv() {
