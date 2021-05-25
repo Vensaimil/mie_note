@@ -7,7 +7,7 @@ console.log(clickedListId);
 let currentUser = JSON.parse(localStorage.getItem("currentUser"));
 document.body.style.backgroundImage = `url(${currentUser.imgsrc})`;
 
-let editArray = [];
+
 
 for (let i = 0; i < noteslist_array.length; i++) {
     if (noteslist_array[i].id === clickedListId) {
@@ -29,30 +29,32 @@ for (let i = 0; i < noteslist_array.length; i++) {
 }
  function note_status() {
     /* let taskFound = false;
-    let  editArrayId = null;
+    let  editingId = null;
 
     for (let i = 0; i < editArray.length; i++) {
         if (taskId === editArray[i]) {
             taskFound = true;
-            editArrayId = i;
+            editId = i;
         }
     }
     if (taskFound) {
-        editArray.splice(editArrayId, 1);
+        editArray.splice(editingId, 1);
     } else {
         editArray.push(taskId);
     } */
 } 
+let editingIdArray = [];
 
 let editBtn = document.getElementById("editBtn");
 editBtn.addEventListener("click", function () {
-    if (editArray.length === 0) {
+    if (editingIdArray.length === 0) {
         alert("You need to choose some checkbox")
     } else {
-        for (let i = 0; i < editArray.length; i++) {
+        for (let i = 0; i < editingIdArray.length; i++) {
             for (let k = 0; k < notesArray.length; k++) {
-                if (editArray[i] === notesArray[k].id) {
-                   
+                let ns = $("#note_string");
+                if (editingIdArray[i] === notesArray[k].id) {
+                   ns.classList.add("active");
                 }
             }
         }
