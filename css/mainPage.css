@@ -1,6 +1,9 @@
 body{
     margin:0px;
-    background-color: #171717;
+    background-color: #848484;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
 }
 .mainpageBody{
     display:flex;
@@ -8,12 +11,13 @@ body{
     height:100vh;
 }
 #userName{
-    color: rgb(255, 255, 255);
+    color: #0e0c0c;
+    text-shadow: 2px 2px 4px #3a3838;
     font-size: 2.5em;
     font-family: 'ThabitRegular';
     position:absolute;
     top:5vh;
-    left:12vw;
+    left:10vw;
 }
 .home{
     background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTYLu3SJIR3Zxxxu82WDkJgnMhj8gwddh088Ls1-qs5Tv9NmvsqmWbwXQQFwIKOk9YzhY&usqp=CAU");
@@ -73,7 +77,8 @@ color:#ffe346;
 }
 .grayblock{
     position:static;
-    background-color: #1C1F1F;
+    background-color: #ffffff;
+    opacity:80%;
     width:35%;}
 .login{
     font-size: 4em;
@@ -133,26 +138,22 @@ color:#ffe346;
 .img{
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
-    background-color: #171717;
+    background-size: cover;
     width:35vh;
     height:35vh;
     border:3px solid #1e1e1e;
     border-radius: 200px;
 }
 .userInfo_string{
-    
     font-size: 2.5em;
+    color:rgb(58, 58, 58);
     font-family:'ThabitRegular';
-    color: rgb(59 59 59);
-    text-shadow: 2px 2px 4px #0a0909;
+    text-shadow: 2px 2px 4px #3a3838;
     margin:auto;
-    font-weight:bold;
     width:80%;
 }
 .yellow{
-    color: #fff06780;
-    text-shadow: 2px 2px 4px #151408b0;
+    color: #0e0c0c;
 }
 .parray{
     margin:10px;

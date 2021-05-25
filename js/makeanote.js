@@ -23,7 +23,7 @@ addBtn.addEventListener("click", function () {
             <p class = "listname"> ${noteslist_array[i]['name']}</p>
             </div>
         `)   
-    }console.log("hi");
+    }
 });
 function createNote() {
     location.href = "notePage.html";
@@ -33,3 +33,10 @@ function openNote(id){
     localStorage.setItem("clickedListId", JSON.stringify(id));
     location.href = "openednote.html";
 }
+
+let deleteBtn = document.getElementById("deleteBtn");
+deleteBtn.addEventListener("click",function(){
+    
+       $("#delete").remove;
+    console.log("hi");
+})

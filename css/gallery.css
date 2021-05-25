@@ -3,19 +3,18 @@ body{
 }
 #backBtn{
     position:absolute;
-    top:5vh;
-    left:5vh;
-    width:3.5vw;
-    height:7vh;
-    background:linear-gradient(#ffffff,rgb(255, 240, 108));
-    border-radius: 50px;
-    border:1px solid rgb(255, 240, 108);
-    opacity:60%;
+    top:2vh;
+    left:3vh;
+    background-color: transparent;
+    border:0px transparent;
+    color: #0e0c0c;
+    text-shadow: 2px 2px 4px #3a3838;
+    font-size: 2em;
+    font-family: 'ThabitRegular';
 }
 #backBtn:hover{
-    box-shadow: 4px 4px 10px -2px rgb(255, 240, 108);
-    opacity:100%;
-    border:1px solid white;
+    text-shadow: 2px 2px 4px rgb(255, 240, 108);
+    border:0px transparent;
     
 }
 #galleryAll{
@@ -37,30 +36,30 @@ body{
     
 }
 #gallery1pic{
-    background: url("https://ic.pics.livejournal.com/phys_exp/20166967/50476/50476_original.jpg");
+    background: url("https://c.wallhere.com/photos/1d/61/low_poly_triangle-224087.jpg!d");
 }
 /* #gallery1pic,#gallery2pic,#gallery3pic,#gallery4pic,#gallery5pic,#gallery6pic,#gallery7pic,#gallery8pic =>:hover{
     opacity:100%;
 } */
 #gallery2pic{
-    background: url("https://en.wahooart.com/Art.nsf/O/9GEHSH/$File/Claude-Monet-le-bassin-aux-nympheas-reflets-verts.jpg");
+    background: url("https://million-wallpapers.ru/wallpapers/3/37/453828540988442/plan-zdaniya.jpg");
 }
 #gallery3pic{
-    background: url("https://3dnews.ru/assets/external/illustrations/2014/07/05/823437/mone_big.jpg");
+    background: url("https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700012516.jpg");
 }
 #gallery4pic{
-    background: url("https://cs6.pikabu.ru/post_img/big/2014/04/07/11/1396897063_1421524292.jpg");
+    background: url("https://cdn.wallpapersafari.com/23/82/yEo7d0.jpg");
 }
 #gallery5pic{
-    background: url("https://i.pinimg.com/originals/5c/2c/5c/5c2c5c63ff154624629fee68781c2735.jpg");
+    background: url("https://krot.info/uploads/posts/2021-03/1614632827_7-p-abstraktsiya-minimalizm-art-kartinki-10.jpg");
 }
 #gallery6pic{
-    background: url("https://us.v-cdn.net/6025126/uploads/editor/r9/grh0cefyxqyz.jpg");
+    background: url("https://buyppcads.com/wp-content/uploads/2017/04/background-1747780.jpg");
 }
 #gallery7pic{
-    background: url("https://3.bp.blogspot.com/-WljvtyfD7pc/UZzCv-eJioI/AAAAAAAAfC0/X3FgQmYZ-rk/s1600/%D0%9A%D0%BB%D0%BE%D0%B4+%D0%9C%D0%BE%D0%BD%D0%B5+-+Cliff+at+Dieppe,+1882.jpg");
+    background: url("https://catherineasquithgallery.com/uploads/posts/2021-02/1614521900_32-p-belaya-fotka-fon-39.jpg");
 }
 #gallery8pic{
-    background: url("https://cdn2.oceansbridge.com/2017/07/25095738/At-Les-Petit-Dalles-1884-Claude-Monet-Oil-Painting.jpg");
+    background: url("https://catherineasquithgallery.com/uploads/posts/2021-02/1612509793_37-p-serii-fon-minimalizm-57.jpg");
 }
 

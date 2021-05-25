@@ -16,36 +16,36 @@ backButton.addEventListener("click", function(){
 let currentUser = JSON.parse(localStorage.getItem("currentUser"));
 console.log(currentUser)
 galleryPic1.addEventListener("click", function(){
-    currentUser.imgsrc = "https://ic.pics.livejournal.com/phys_exp/20166967/50476/50476_original.jpg";
+    currentUser.imgsrc = "https://c.wallhere.com/photos/1d/61/low_poly_triangle-224087.jpg!d";
     localStorage.setItem("currentUser", JSON.stringify(currentUser));
     console.log(currentUser)
 });
 galleryPic2.addEventListener("click", function(){
-    currentUser.imgsrc = "https://en.wahooart.com/Art.nsf/O/9GEHSH/$File/Claude-Monet-le-bassin-aux-nympheas-reflets-verts.jpg";
+    currentUser.imgsrc = "https://million-wallpapers.ru/wallpapers/3/37/453828540988442/plan-zdaniya.jpg";
     localStorage.setItem("currentUser", JSON.stringify(currentUser));
 });
 galleryPic3.addEventListener("click", function(){
-    currentUser.imgsrc = "https://3dnews.ru/assets/external/illustrations/2014/07/05/823437/mone_big.jpg";
+    currentUser.imgsrc = "https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700012516.jpg";
    localStorage.setItem("currentUser", JSON.stringify(currentUser));
 });
 galleryPic4.addEventListener("click", function(){
-    currentUser.imgsrc = "https://cs6.pikabu.ru/post_img/big/2014/04/07/11/1396897063_1421524292.jpg"
+    currentUser.imgsrc = "https://cdn.wallpapersafari.com/23/82/yEo7d0.jpg"
     localStorage.setItem("currentUser", JSON.stringify(currentUser));
 });
 galleryPic5.addEventListener("click", function(){
-    currentUser.imgsrc = "https://i.pinimg.com/originals/5c/2c/5c/5c2c5c63ff154624629fee68781c2735.jpg";
+    currentUser.imgsrc = "https://krot.info/uploads/posts/2021-03/1614632827_7-p-abstraktsiya-minimalizm-art-kartinki-10.jpg";
     localStorage.setItem("currentUser", JSON.stringify(currentUser));
 });
 galleryPic6.addEventListener("click", function(){
-    currentUser.imgsrc = "https://us.v-cdn.net/6025126/uploads/editor/r9/grh0cefyxqyz.jpg";
+    currentUser.imgsrc = "https://buyppcads.com/wp-content/uploads/2017/04/background-1747780.jpg";
     localStorage.setItem("currentUser", JSON.stringify(currentUser));
 });
 galleryPic7.addEventListener("click", function(){
-    currentUser.imgsrc = "https://3.bp.blogspot.com/-WljvtyfD7pc/UZzCv-eJioI/AAAAAAAAfC0/X3FgQmYZ-rk/s1600/%D0%9A%D0%BB%D0%BE%D0%B4+%D0%9C%D0%BE%D0%BD%D0%B5+-+Cliff+at+Dieppe,+1882.jpg";
+    currentUser.imgsrc = "https://catherineasquithgallery.com/uploads/posts/2021-02/1614521900_32-p-belaya-fotka-fon-39.jpg";
     localStorage.setItem("currentUser", JSON.stringify(currentUser));
 });
 galleryPic8.addEventListener("click", function(){
-    currentUser.imgsrc = "https://cdn2.oceansbridge.com/2017/07/25095738/At-Les-Petit-Dalles-1884-Claude-Monet-Oil-Painting.jpg";
+    currentUser.imgsrc = "https://catherineasquithgallery.com/uploads/posts/2021-02/1612509793_37-p-serii-fon-minimalizm-57.jpg";
     localStorage.setItem("currentUser", JSON.stringify(currentUser));
 });
 

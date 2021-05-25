@@ -1,3 +1,36 @@
+
+body {
+    margin: 0px;
+    height:80vh;
+    
+}
+#editBtn{
+    position:fixed;
+    top:18vh;
+    left:6vh;
+    width: 2.5vw;
+    height: 25vh;
+    word-wrap: break-word; 
+    border-radius: 50px;
+    font-family:'ThabitRegular';
+    font-size: 1.7em;
+    display:table;
+    padding: 0.5%;
+    opacity:60%;
+
+    color: #0e0c0c;
+    text-shadow: 2px 2px 4px #3a3838;
+    box-shadow: 2px 2px 4px rgb(255, 255, 255);
+    border:1px solid rgb(255, 255, 255);
+    background-color: #757575;
+   
+}
+#editBtn:hover{
+    box-shadow: 4px 5px 15px -2px rgb(101 250 255);
+    opacity:80%;
+    border:1px solid white;
+    
+}
 #listname{
     position:absolute;
     top:5vh;
@@ -29,6 +62,7 @@
     padding:0px;
 }
 #note_string{
+    
     font-size: 2em;
     color: rgb(1, 255, 242);
     background-color: transparent;
@@ -43,9 +77,12 @@
 #note_cb{
     margin:1.5vh;
     width: 2vw;
-    height: 3vh;
+    height: 5vh;
 
 }
+.active {
+    text-decoration: 2.5px line-through   rgb(1, 255, 242) !important;
+  }
 @media screen and (max-width:575px){
     #note_cb {
         width: 5vw;

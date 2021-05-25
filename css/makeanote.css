@@ -1,18 +1,50 @@
 #addBtn{
+    font-family: 'ThabitRegular';
     position:fixed;
     top:15vh;
     left:6vh;
-    background:linear-gradient(#36F3FF,#5135a0);
     width: 2.5vw;
     height: 20vh;
+    border-radius: 50px;;
     word-wrap: break-word; 
-    border-radius: 50px;
-    border:1px solid rgb(101, 250, 255);
-    font-family:'ThabitRegular';
     font-size: 1.7em;
-    color:rgb(255, 255, 255);
     display:table;
     padding: 0.5%;
+    opacity:60%;
+    color: #0e0c0c;
+    text-shadow: 2px 2px 4px #3a3838;
+    box-shadow: 2px 2px 4px rgb(255, 255, 255);
+    border:1px solid rgb(255, 255, 255);
+    background-color: #757575;
+}
+#addBtn:hover{
+    box-shadow: 4px 5px 15px -2px rgb(101 250 255);
+    opacity:80%;
+    border:1px solid white;
+}
+#deleteBtn{
+    font-family: 'ThabitRegular';
+    position:fixed;
+    top:38vh;
+    left:6vh;
+    width: 2.5vw;
+    height: 32vh;
+    border-radius: 50px;;
+    word-wrap: break-word; 
+    font-size: 1.7em;
+    display:table;
+    padding: 0.5%;
+    opacity:60%;
+    color: #0e0c0c;
+    text-shadow: 2px 2px 4px #3a3838;
+    box-shadow: 2px 2px 4px rgb(255, 255, 255);
+    border:1px solid rgb(255, 255, 255);
+    background-color: #757575;
+}
+#deleteBtn:hover{
+    box-shadow: 4px 5px 15px -2px rgb(101 250 255);
+    opacity:80%;
+    border:1px solid white;
 }
 
 #innerBlocks{
