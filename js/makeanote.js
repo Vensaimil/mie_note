@@ -34,9 +34,3 @@ function openNote(id){
     location.href = "openednote.html";
 }
 
-let deleteBtn = document.getElementById("deleteBtn");
-deleteBtn.addEventListener("click",function(){
-    
-       $("#delete").remove;
-    console.log("hi");
-})

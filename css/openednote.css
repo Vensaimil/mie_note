@@ -31,6 +31,30 @@ body {
     border:1px solid white;
     
 }
+#dltBtn{
+    font-family: 'ThabitRegular';
+    position:fixed;
+    top:45vh;
+    left:6vh;
+    width: 2.5vw;
+    height: 32vh;
+    border-radius: 50px;;
+    word-wrap: break-word; 
+    font-size: 1.7em;
+    display:table;
+    padding: 0.5%;
+    opacity:60%;
+    color: #0e0c0c;
+    text-shadow: 2px 2px 4px #3a3838;
+    box-shadow: 2px 2px 4px rgb(255, 255, 255);
+    border:1px solid rgb(255, 255, 255);
+    background-color: #757575;
+}
+#dltBtn:hover{
+    box-shadow: 4px 5px 15px -2px rgb(101 250 255);
+    opacity:80%;
+    border:1px solid white;
+}
 #listname{
     position:absolute;
     top:5vh;
