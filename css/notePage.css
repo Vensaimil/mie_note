@@ -144,22 +144,22 @@
         top: 12vh;
         left: 3vh;
         width: 7vw;
-        height: 18vh;
+        height: 23vh;
     word-wrap: break-word;
     font-size: 1.3em;
     }
     #addBtn {
-        top: 32vh;
+        top: 37vh;
         left: 3vh;
         width: 7vw;
         height: 18vh;
         font-size: 1.3em;
     }
     #clearBtn {
-        top: 52vh;
+        top: 57vh;
         left: 3vh;
         width: 7vw;
-        height: 23vh;
+        height: 29vh;
         font-size: 1.3em;
     }
     #listnameInput {
