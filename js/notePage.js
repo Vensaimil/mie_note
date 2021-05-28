@@ -78,9 +78,6 @@ function deleteItem(taskId) {
 
     showItems();
 }
-
-
-
 saveBtn.addEventListener("click", function () {
     let note_listName = document.getElementById("listnameInput").value;
 
@@ -95,9 +92,6 @@ saveBtn.addEventListener("click", function () {
 
 });
 
-
-
-
 addBtn.addEventListener("click", function () {
     let string = document.getElementById("note_string");
     let note_string = string.value;
@@ -110,9 +104,6 @@ addBtn.addEventListener("click", function () {
     localStorage.setItem('notesArray', JSON.stringify(notesArray));
     console.log(notesArray);
 })
-
-
-
 
 clearBtn.addEventListener("click", function () {
     if (deletedtasksIdArray.length === 0) {
